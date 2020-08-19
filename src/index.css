@@ -20,18 +20,33 @@
 }
 .content-home h1{
   text-shadow: 1px 1px 1px #ccc;
+  position: relative;
+}
+.content-home h1 span:last-child{
+  position: absolute;
+  right: 10%;
+  width: 0;
+  background-color: #1c5669;
+  animation: maquina 2s alternate steps(12);
+  animation-iteration-count: 1;
+}
+@keyframes maquina{
+  from{
+    width: 50%;
+  }
+  to{
+    width: 30%;
+  }
 }
 .content-home p{
   font-size: 18px;
   text-shadow: 1px 1px 1px #ccc;
 }
 .parpadea {
-  
   animation-name: parpadeo;
   animation-duration: 0.6s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
 }
 
 @keyframes parpadeo {  
@@ -302,6 +317,22 @@ nav{
   .burger{
     display: block;
     
+  }
+  .content-home h1 span:last-child{
+    position: absolute;
+    right: 10%;
+    width: 0;
+    background-color: #1c5669;
+    animation: maquina 2s alternate steps(12);
+    animation-iteration-count: 1;
+  }
+  @keyframes maquina{
+    from{
+      width: 90%;
+    }
+    to{
+      width: 10%;
+    }
   }
 }
 .nav-active{
