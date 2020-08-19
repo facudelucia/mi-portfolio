@@ -14,8 +14,8 @@ function App() {
       <Router>
         <Switch>
             <Route exact path={"/"} component={Home}/>
-            <Route exact path={"/aboutme"} component={AboutMe}/>
-            <Route exact path={"/contact"} component={Contact}/>
+            <Route path={"/aboutme"} component={AboutMe}/>
+            <Route path={"/contact"} component={Contact}/>
         </Switch>
       </Router>
     </IdiomaState>

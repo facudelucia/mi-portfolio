@@ -27,6 +27,15 @@
 }
 
 /*about styles*/
+.container-about{
+  text-align: center;
+}
+.content-about{
+  width: 70%;
+  padding-top: 70px;
+  display: inline-block;
+}
+
 #picture img{
   height: 200px;
   border: 3px solid white;
@@ -49,13 +58,6 @@
 }
 .social-media .icon:hover{
   transform: scale(1.2, 1.2);
-}
-.container-about{
-  text-align: center;
-}
-.content-about{
-  width: 70%;
-  display: inline-block;
 }
 
 #description h2{
@@ -94,6 +96,7 @@
   text-align: center;
 }
 .content-contact{
+  padding-top: 70px;
   width: 80%;
   display: inline-block;
 }
@@ -181,6 +184,8 @@ textarea.contact-form-text{
   border: none;
 }
 nav{
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -237,7 +242,8 @@ nav{
   .logo{
     display: flex;
     width: 80%;
-  }.content-home{
+  }
+  .content-home{
     padding-top: 240px;
   }
   #map iframe{
@@ -245,9 +251,11 @@ nav{
     height: 200px;
   }
   .contact-form-btn{
-   
+   width: 100%;
+  }
+  nav{
+    position: fixed;
     width: 100%;
-   
   }
   .nav-links{
     position: fixed;
