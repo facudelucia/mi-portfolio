@@ -58,7 +58,7 @@ const Contact = () => {
         <Fragment>
             <Navbar />
             <div className="containerx container-contact">
-                <div className="content content-contact">
+                <div className="content content-contact animate__animated animate__backInDown">
                     <div id="location">
                         <h2>{english ? "Where I am?":"Dónde estoy?"}</h2>
                         <div id="map">

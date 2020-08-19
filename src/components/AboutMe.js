@@ -8,7 +8,7 @@ const AboutMe = () => {
         <Fragment>
             <Navbar />
             <div className="containerx container-about">
-                <div className="content content-about">
+                <div className="content content-about animate__animated animate__backInDown">
                     <div id="picture">
                         <img src={"./assets/IMG_20200723_222327_336.jpg"} />
                     </div>

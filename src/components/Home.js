@@ -8,8 +8,8 @@ const Home = () => {
         <Fragment>
             <Navbar />
             <div className="containerx">
-                <div className="content-home">
-                    <h1>facudelucia_</h1>
+                <div className="content-home animate__animated animate__backInDown">
+                    <h1>facudelucia<span className="parpadea">_</span></h1>
                     <p>{english ? "Web developer":"Desarrollador web"}</p>
                     
                 </div>
