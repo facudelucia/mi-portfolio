@@ -23,14 +23,14 @@ const AboutMe = () => {
                             Hi, I'm Facu, I'm 24 years old, I'm from the city of Rosario, Argentina. I am a web developer and I have knowledge in:
                             <span><strong>-</strong>
                                 Layout and responsive design with tools like HTML, CSS (media queries, flexbox) and Bootstrap.</span>
-                                <span><strong>-</strong>React (Hooks, Context API), Vainilla JS, ES6</span>
+                                <span><strong>-</strong>-React (Hooks, Context API, React Redux, Styled Components), Vainilla JS, ES6</span>
                                 <span><strong>-</strong>Authentication and CRUD operations in firebase.</span>
                                 <span><strong>-</strong>Creation of APIs, authentications and CRUD operations with node, express and mongo.</span>
                                 <span><strong>-</strong>Git knowledge.</span>
                             </p>
                             : <p>Hola soy Facu, tengo 24 años, soy de la ciudad de Rosario, Argentina. Soy desarrollador web y tengo conocimientos en:
                             <span><strong>-</strong>Maquetado y diseño responsivo con herramientas como HTML, CSS (media queries, flexbox) y Bootstrap.</span>
-                                <span><strong>-</strong>React (Hooks, Context API), Vainilla JS, ES6</span>
+                                <span><strong>-</strong>-React (Hooks, Context API, React Redux, Styled Components), Vainilla JS, ES6</span>
                                 <span><strong>-</strong>Autenticaciones y operaciones CRUD en firebase.</span>
                                 <span><strong>-</strong>Creacion de APIs, autenticaciones y operaciones CRUD con node, express y mongo.</span>
                                 <span><strong>-</strong>Manejo de Git.</span>
