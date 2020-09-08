@@ -59,7 +59,7 @@
   text-align: center;
 }
 .content-about{
-  width: 70%;
+  width: 80%;
   padding-top: 8%;
   display: inline-block;
 }
@@ -119,6 +119,35 @@
   text-decoration: underline;
   transform: scale(1.1, 1.1);
 }
+/*projects styles*/
+.content-projects{
+  padding-top: 8%;
+  text-shadow: 1px 1px 1px #ccc;
+  width: 90%;
+  display: inline-block;
+}
+.content-projects .card-title{
+  color: black;
+}
+.content-projects h1{
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+.content-projects a{
+  text-decoration:none;
+}
+#githubAnchor{
+  color: black;
+  display: inline-block;
+  margin-top: 10px;
+}
+#githubAnchor:hover{
+  transform: scale(1.1, 1.1);
+}
+
+.content-projects button{
+  color: #1c5669;
+}
 /*contact styles*/
 .container-contact{
   text-align: center;
@@ -138,7 +167,7 @@
   margin-bottom: 10px;
 }
 #location{
-  border-bottom: 2px solid white;;
+  border-bottom: 2px solid white;
 }
 #contact-section h2{
   text-shadow: 1px 1px 1px #ccc;
@@ -241,6 +270,11 @@ nav{
   letter-spacing: 2px;
   text-shadow: 1px 1px 1px #ccc;
 }
+.nav-links .active{
+  color: black;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
 .nav-links .anchor:hover{
   display: block;
   color: black;
@@ -274,10 +308,17 @@ nav{
   }
   /*about*/
   .content-about{
+    width: 90%;
     padding-top: 20%;
+  }
+  .content-projects{
+    padding-top: 20%;
+    width: 90%;
+    display: inline-block;
   }
   /*contact*/
   .content-contact{
+    width: 90%;
     padding-top: 20%;
   }
   /*navbar*/

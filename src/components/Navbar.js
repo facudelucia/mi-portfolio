@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import idiomaContext from "../idioma/idiomaContext"
 const Navbar = () => {
     const {english, changeIdiomaEspanol, changeIdiomaEnglish} = useContext(idiomaContext)
@@ -37,13 +37,16 @@ const Navbar = () => {
             </div>
             <ul className="nav-links">
                 <li>
-                    <Link className="anchor" exact to="/">{english ? "HOME":"INICIO"}</Link>
+                    <NavLink exact activeClassName="active" className="anchor" exact to="/">{english ? "HOME":"INICIO"}</NavLink>
                 </li>
                 <li>
-                    <Link className="anchor" exact to="/aboutme">{english ? "ABOUT ME":"SOBRE MI"}</Link>
+                    <NavLink exact activeClassName="active" className="anchor" exact to="/aboutme">{english ? "ABOUT ME":"SOBRE MI"}</NavLink>
                 </li>
                 <li>
-                    <Link className="anchor" exact to="/contact">{english ? "CONTACT":"CONTACTO"}</Link>
+                    <NavLink exact activeClassName="active" className="anchor" exact to="/projects">{english ? "PROJECTS":"PROYECTOS"}</NavLink>
+                </li>
+                <li>
+                    <NavLink exact activeClassName="active" className="anchor" exact to="/contact">{english ? "CONTACT":"CONTACTO"}</NavLink>
                 </li>
             </ul>
             <div className="burger" onClick={handleBurger}>

@@ -23,7 +23,9 @@ const AboutMe = () => {
                             Hi, I'm Facu, I'm 24 years old, I'm from the city of Rosario, Argentina. I am a web developer and I have knowledge in:
                             <span><strong>-</strong>
                                 Layout and responsive design with tools like HTML, CSS (media queries, flexbox) and Bootstrap.</span>
-                                <span><strong>-</strong>-React (Hooks, Context API, React Redux, Styled Components), Vainilla JS, ES6</span>
+                                <span><strong>-</strong>Vainilla JS, ES6</span>
+                                <span><strong>-</strong>React (Hooks, Context API, React Redux, Styled Components)</span>
+                                <span><strong>-</strong>Angular (Angular maps, Angular material, Angularfire)</span>
                                 <span><strong>-</strong>Authentication and CRUD operations in firebase.</span>
                                 <span><strong>-</strong>Creation of APIs, authentications and CRUD operations with node, express and mongo.</span>
                                 <span><strong>-</strong>Git knowledge.</span>

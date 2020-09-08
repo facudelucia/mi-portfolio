@@ -8,6 +8,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Projects from './components/Projects';
 function App() {
   return (
     <IdiomaState>
@@ -16,6 +17,7 @@ function App() {
             <Route exact path={"/"} component={Home}/>
             <Route path={"/aboutme"} component={AboutMe}/>
             <Route path={"/contact"} component={Contact}/>
+            <Route path={"/projects"} component={Projects}/>
         </Switch>
       </Router>
     </IdiomaState>
