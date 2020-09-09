@@ -32,7 +32,9 @@ const AboutMe = () => {
                             </p>
                             : <p>Hola soy Facu, tengo 24 años, soy de la ciudad de Rosario, Argentina. Soy desarrollador web y tengo conocimientos en:
                             <span><strong>-</strong>Maquetado y diseño responsivo con herramientas como HTML, CSS (media queries, flexbox) y Bootstrap.</span>
-                                <span><strong>-</strong>-React (Hooks, Context API, React Redux, Styled Components), Vainilla JS, ES6</span>
+                                <span><strong>-</strong>React (Hooks, Context API, React Redux, Styled Components)</span>
+                                <span><strong>-</strong>Angular (Angular maps, Angular material, Angularfire)</span>
+                                <span><strong>-</strong>Vainilla JS, ES6</span>
                                 <span><strong>-</strong>Autenticaciones y operaciones CRUD en firebase.</span>
                                 <span><strong>-</strong>Creacion de APIs, autenticaciones y operaciones CRUD con node, express y mongo.</span>
                                 <span><strong>-</strong>Manejo de Git.</span>
