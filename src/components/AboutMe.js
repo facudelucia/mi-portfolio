@@ -41,7 +41,20 @@ const AboutMe = () => {
                             </p>}
                         <a href={"./assets/CV.pdf"} download>{english ? "Download CV": "Descargar CV"} <i className="fas fa-file-download"></i></a>
                     </div>
+                    
                 </div>
+                <div className="box">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
             </div>
             <Footer />
         </Fragment>

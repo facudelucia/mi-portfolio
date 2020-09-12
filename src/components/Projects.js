@@ -30,6 +30,18 @@ const Projects = () => {
                         
                     </div>
                 </div>
+                <div className="box">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
             <Footer />

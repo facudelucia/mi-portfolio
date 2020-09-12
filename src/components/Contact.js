@@ -83,10 +83,23 @@ const Contact = () => {
                                 value={msg}
                                 onChange={handleInputChange}
                             />
-                            <input type="submit" className="contact-form-btn" value={english ?"Send" :"Enviar"} />
+                            <input type="submit" className="contact-form-btn" value={english ?"SEND" :"ENVIAR"} />
                         </form>
                     </div>
+                    
                 </div>
+                <div className="box">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
             </div>
             <Footer />
         </Fragment>
