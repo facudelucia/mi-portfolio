@@ -1,15 +1,14 @@
 import React,{Fragment, useContext} from 'react';
 import Navbar from "./Navbar"
-import Footer from "./Footer"
 import idiomaContext from "../idioma/idiomaContext"
 import Typical from 'react-typical'
+
 const Home = () => {
     const { english } = useContext(idiomaContext)
     return (
         <Fragment>
-            <Navbar />
-            <div className="containerx">
-                <div className="content-home">
+            <div className="containerApp">
+                <div className="home">
                 <Typical 
                 loop={Infinity}
                 className="typical"
@@ -38,7 +37,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </Fragment>
      );
 }

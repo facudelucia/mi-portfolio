@@ -1,10 +1,10 @@
-/*general styles*/
+/*---------general styles----------*/
 *{
   margin:0px;
   padding: 0px;
   box-sizing: border-box;
 }
-.containerx{
+.containerApp{
   background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%);
   text-align: center;
   min-height: 100vh;
@@ -79,61 +79,56 @@
     opacity: 0;
   }
 }
-.content{
-  padding: 20px;
-}
-/*home styles*/
-.content-home{
+/*-----------home styles------------*/
+.home{
   padding-top: 300px;
 }
-.content-home h1{
+.home h1{
   text-shadow: 1px 1px 1px #ccc;
 }
 .typical{
   font-size: 50px;
   font-weight: bold;
 }
-.content-home p{
+.home p{
   font-size: 20px;
   font-weight: bold;
   
 }
 
-/*about styles*/
-.container-about{
+/*-----------about styles---------*/
+.aboutMe{
   text-align: center;
-}
-.content-about{
   width: 80%;
   padding-top: 8%;
   display: inline-block;
 }
 
-#picture img{
+.aboutMe__picture{
   height: 200px;
   border: 3px solid white;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
-.social-media{
+.aboutMe__social-media{
   margin-bottom: 10px;
 }
-.social-media a{
+.aboutMe__social-media a{
   color: white;
   text-shadow: 1px 1px 2px #ccc;
 }
 
-.social-media .icon{
+.aboutMe__icon{
   font-size: 45px;
   margin: 10px;
   transition: all 300ms;
 }
-.social-media .icon:hover{
+.aboutMe__icon:hover{
   transform: scale(1.2, 1.2);
 }
 
-#description h2{
+.aboutMe__description h2{
   letter-spacing: 2px;
   border-bottom: 2px solid white;
   margin-bottom: 10px;
@@ -141,18 +136,18 @@
   text-shadow: 1px 1px 2px #ccc;
   font-size: 50px;
 }
-#description p{
+.aboutMe__description p{
   font-weight: bold;
   text-align: left;
   margin-top: 10px;
   letter-spacing: 1px;
   font-size: 20px;
 }
-#description span{
+.aboutMe__description span{
   display: block;
   text-align: left;
 }
-#description a{
+.aboutMe__description a{
   display: inline-block;
   font-size:20px ;
   margin-top: 20px;
@@ -161,83 +156,126 @@
   font-weight: bold;
   transition: all 300ms;
 } 
-#description a:hover{
+.aboutMe__description a:hover{
   text-decoration: underline;
   transform: scale(1.1, 1.1);
 }
-/*projects styles*/
-.content-projects{
-  padding-top: 8%;
-  text-shadow: 1px 1px 1px #ccc;
+/*-----------projects styles------------*/
+.projects__container{
   width: 90%;
-  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 8%;
 }
-.content-projects .card-title{
-  color: black;
+.projects__row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap;
 }
-.content-projects h1{
-  margin-bottom: 20px;
-  border-bottom: 2px solid white;
+.projects__card{
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  
 }
-.content-projects a{
-  text-decoration:none;
-}
-#githubAnchor{
-  color: black;
-  display: inline-block;
-  margin-top: 10px;
-}
-#githubAnchor:hover{
-  transform: scale(1.1, 1.1);
-}
-
-.content-projects button{
-  color: #1c5669;
-}
-/*contact styles*/
-.container-contact{
+.projects__card-header{
   text-align: center;
+  color: #fff;
 }
-.content-contact{
+.projects__card-header img{
+  height: 100%;
+  width: 100%;
+}
+.projects__card-body{
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+
+}
+.projects__card-body h2{
+  color: black;
+}
+.projects__btn{
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+.projects__anchor{
+  margin-top: 10px;
+  display: block;
+}
+.projects__card:hover{
+    transform: scale(1.05);
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
+@media screen and (max-width:1000px){
+  .projects__card{
+      width: 40%;
+  }
+}
+@media screen and (max-width:620px){
+    .projects__container{
+        width: 100%;
+        padding-top: 20%;
+    }
+    .projects__card{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*-----------contact styles-----------*/
+
+
+.contact{
+  text-align: center;
   padding-top: 8%;
   width: 80%;
   display: inline-block;
 }
  
-#location h2{
+.contact__location h2{
   text-shadow: 1px 1px 1px #ccc;
   display: block;
   margin-bottom: 10px;
 }
-#map{
+.contact__map{
   margin-bottom: 10px;
 }
-#location{
+iframe{
+  width: 100%;
+}
+.contact__location{
   border-bottom: 2px solid white;
 }
-#contact-section h2{
+.contact__contactSection h2{
   text-shadow: 1px 1px 1px #ccc;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#contact-section form{
+
+.contact__form{
   display: flex;
   flex-direction: column;
-
-}
-.contact-form{
   width: 100%;
   margin: auto;
   padding: 0 10px;
   overflow: hidden;
   text-align: center
 }
-.contact-form label{
+.contact__form label{
   font-size: 20px;
   font-weight: bold;
 }
-.contact-form-text{
+.contact__input{
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -250,14 +288,14 @@
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.contact-form-text:focus{
+.contact__input:focus{
   box-shadow: 0 0 10px 4px rgb(45, 120, 158);
 }
-textarea.contact-form-text{
+textarea.contact__input{
   resize: none;
   height: 120px;
 }
-.contact-form-btn{
+.contact__btn{
   border: 0;
   font-size: 20px;
   font-weight: bold;
@@ -268,8 +306,9 @@ textarea.contact-form-text{
   transition: 0.5s;
   border-radius: 5px;
   width: 100%;
+  margin-bottom: 20px;
 }
-.contact-form-btn:hover{
+.contact__btn:hover{
   background-color: #ccc;
   letter-spacing: 4px;
 }
@@ -283,11 +322,22 @@ textarea.contact-form-text{
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 2px #ccc;
 }
-/*navbar styles*/
+
+/*--------------navbar styles----------------*/
+
 .btn-secondary {
   color: #fff;
-  background-color: #b9bec1;
+  background-color: #5b78c7;
   border: none;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+  background-color: rgb(95, 85, 165);
+}
+.btn-secondary.focus, .btn-secondary:focus {
+  background-color: rgb(95, 85, 165)
+}
+.btn-secondary:hover{
+  background-color: rgb(95, 85, 165);
 }
 nav{
   z-index: 1;
@@ -298,7 +348,7 @@ nav{
   align-items: center;
   min-height: 8vh;
   font-family: 'Roboto', sans-serif;
-  background: #ccc;
+  background: #5b78c7;
 }
 .logo{
   display: none;
@@ -312,36 +362,36 @@ nav{
 .nav-links li{
   margin-top: 15px;
 }
-
-.nav-links .anchor{
-  color: gray;
+.anchor{
+  color: white;
   font-weight: bold;
   text-decoration: none;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 1px #ccc;
+  letter-spacing: 4px;
+  font-size: 20px;
 }
 .anchor::after{
   content: '';
   display: block;
   width: 0;
   height: 2px;
-  background: black;
+  background: white;
   transition: width .3s;
 }
-.nav-links .active{
-  color: black;
-  font-weight: bold;
-  letter-spacing: 3px;
+.anchor:hover{
   display: block;
-  transform: scale(1.3, 1.3);
-}
-.nav-links .anchor:hover{
-  display: block;
-  color: black;
-  text-shadow: 1px 1px 1px #ccc;
-  transform: scale(1.3, 1.3);
+  color:white;
+  text-decoration: none;
 }
 .anchor:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+.active{
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+.active::after{
   width: 100%;
   transition: width .3s;
 }
@@ -352,7 +402,7 @@ nav{
 .burger div{
   width: 25px;
   height: 3px;
-  background-color: gray;
+  background-color: white;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -367,11 +417,11 @@ nav{
     overflow-x: hidden;
   }
   /*home*/
-  .content-home{
+  .home{
     padding-top: 240px;
   }
   /*about*/
-  .content-about{
+  .about{
     width: 90%;
     padding-top: 20%;
   }
@@ -381,18 +431,11 @@ nav{
     display: inline-block;
   }
   /*contact*/
-  .content-contact{
+  .contact{
     width: 90%;
     padding-top: 20%;
   }
-  /*navbar*/
-  #map iframe{
-    width: 100%;
-    height: 200px;
-  }
-  .contact-form-btn{
-   width: 100%;
-  } 
+    /*navbar*/
   .logo{
     display: flex;
     width: 80%;
@@ -407,7 +450,7 @@ nav{
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #ccc;
+    background-color: #5b78c7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -423,21 +466,8 @@ nav{
     display: block;
     
   }
-  .content-home h1 span:last-child{
-    position: absolute;
-    right: 10%;
-    width: 0;
-    background-color: #1c5669;
-    animation: maquina 2s alternate steps(12);
-    animation-iteration-count: 1;
-  }
-  @keyframes maquina{
-    from{
-      width: 90%;
-    }
-    to{
-      width: 10%;
-    }
+  .anchor{
+    font-size: 14px;
   }
 }
 .nav-active{
@@ -462,4 +492,3 @@ nav{
 .toggle .line3{
   transform: rotate(45deg) translate(-5px, -6px);
 }
-

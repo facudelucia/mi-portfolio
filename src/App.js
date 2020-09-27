@@ -9,15 +9,33 @@ import {
   Route
 } from "react-router-dom";
 import Projects from './components/Projects';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 function App() {
   return (
     <IdiomaState>
       <Router>
         <Switch>
-            <Route exact path={"/"} component={Home}/>
-            <Route path={"/aboutme"} component={AboutMe}/>
-            <Route path={"/contact"} component={Contact}/>
-            <Route path={"/projects"} component={Projects}/>
+            <Route exact path={"/"}>
+              <Navbar />
+              <Home />
+              <Footer />
+            </Route>
+            <Route exact path={"/aboutme"}>
+              <Navbar />
+              <AboutMe />
+              <Footer />
+            </Route>
+            <Route exact path={"/contact"}>
+              <Navbar />
+              <Contact />
+              <Footer />
+            </Route>
+            <Route exact path={"/projects"}>
+              <Navbar />
+              <Projects />
+              <Footer />
+            </Route>
         </Switch>
       </Router>
     </IdiomaState>
