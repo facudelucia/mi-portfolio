@@ -1,17 +1,17 @@
-import React, { Fragment, useContext, useState } from 'react';
+import React, { Fragment, useContext, useEffect, useState} from 'react';
 import idiomaContext from "../idioma/idiomaContext"
 import validator from "validator"
 import Swal from "sweetalert2"
 import {db} from "../firebase/firebaseConfig"
-
+import useSpinner from "../spinner/useSpinner"
 const Contact = () => {
     const { english } = useContext(idiomaContext)
-
     const [form, setForm] = useState({
         email:"",
         msg:""
     })
     const {email, msg} = form
+    
     const handleInputChange = (e) => {
         setForm({
             ...form,
@@ -53,10 +53,22 @@ const Contact = () => {
             msg:""
         })
     }
+    const [spinner, showSpinner, hideSpinner] = useSpinner()
+    const [isLoading, setIsLoading] = useState(true)
+    useEffect(() => {
+        showSpinner()
+        setTimeout(() => {
+            hideSpinner()
+            setIsLoading(false)
+        }, 2000);
+    }, [])
     return (
         <Fragment>
             <div className="containerApp">
-                <div className="contact animate__animated animate__backInDown">
+                {isLoading 
+                ? spinner 
+                : <>
+                    <div className="contact animate__animated animate__backInDown">
                     <div className="contact__location">
                         <h2>{english ? "Where I am?":"Dónde estoy?"}</h2>
                         <div className="contact__map">
@@ -86,6 +98,8 @@ const Contact = () => {
                     </div>
                     
                 </div>
+                    </>
+                }
                 <div className="box">
                         <div></div>
                         <div></div>
