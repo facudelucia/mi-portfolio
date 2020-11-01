@@ -1,10 +1,9 @@
-import React,{Fragment, useContext} from 'react';
-import Navbar from "./Navbar"
-import idiomaContext from "../idioma/idiomaContext"
+import React,{Fragment } from 'react';
 import Typical from 'react-typical'
+import { useStateValue } from '../StateProvider';
 
 const Home = () => {
-    const { english } = useContext(idiomaContext)
+    const [{english}] = useStateValue()
     return (
         <Fragment>
             <div className="containerApp">

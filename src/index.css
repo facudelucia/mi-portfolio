@@ -4,8 +4,10 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.containerApp{
+body{
   background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.containerApp{
   text-align: center;
   min-height: 100vh;
   color: white;
@@ -100,8 +102,9 @@
 .aboutMe{
   text-align: center;
   width: 80%;
-  padding-top: 8%;
+  padding-top: 10%;
   display: inline-block;
+  padding-bottom: 7%;
 }
 
 .aboutMe__picture{
@@ -161,25 +164,24 @@
   transform: scale(1.1, 1.1);
 }
 /*-----------projects styles------------*/
-.projects__container{
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 8%;
+.projects{
+  padding-top: 10%;
 }
 .projects__row{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-flow: wrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projects__column{
+  float: left; 
+  width: 33%;
+  padding: 0 10px;
+  margin-bottom:30px;
 }
 .projects__card{
-  width: 20%;
-  background: #fff;
-  border: 1px solid #ccc;
-  margin-bottom: 50px;
-  transition: 0.3s;
-  
+  background-color: white;
+  min-height: auto;
+  z-index:10;
 }
 .projects__card-header{
   text-align: center;
@@ -202,7 +204,7 @@
   display: block;
   color: #fff;
   text-align: center;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #5b78c7, #5b8cf7);
   margin-top: 30px;
   text-decoration: none;
   padding: 10px 5px;
@@ -219,18 +221,14 @@
   color: gray;
 }
 @media screen and (max-width:1000px){
-  .projects__card{
-      width: 40%;
+  .projects__column{
+      width: 50%;
   }
 }
 @media screen and (max-width:620px){
-    .projects__container{
-        width: 100%;
-        padding-top: 20%;
-    }
-    .projects__card{
-        width:80%;
-        margin-left: auto;
+    .projects__column{
+        width:90%;
+        margin-left: 3%;
         margin-right: auto;
     }
 }
@@ -242,10 +240,10 @@
   padding-top: 8%;
   width: 80%;
   display: inline-block;
+  padding-bottom: 6%;
 }
  
 .contact__location h2{
-  text-shadow: 1px 1px 1px #ccc;
   display: block;
   margin-bottom: 10px;
 }
@@ -254,12 +252,12 @@
 }
 iframe{
   width: 100%;
+  z-index:10;
 }
 .contact__location{
   border-bottom: 2px solid white;
 }
 .contact__contactSection h2{
-  text-shadow: 1px 1px 1px #ccc;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -310,40 +308,67 @@ textarea.contact__input{
   border-radius: 5px;
   width: 100%;
   margin-bottom: 20px;
+  background: #5b78c7;
+  color: white;
+  outline-width: 0;
 }
 .contact__btn:hover{
-  background-color: #ccc;
+  background-color: #5b8cf7;
   letter-spacing: 4px;
+  outline-width: 0;
 }
 /*footer*/
 #footer{
-  min-height: 2vh;
+  clear: both;
+  position: relative;
+  height: 5vh;
+  background: white;
+  margin-top: -20px;
 }
 #footer p{
   font-size: 16px;
+  line-height: 32px;
   letter-spacing: 1px;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 2px #ccc;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 /*--------------navbar styles----------------*/
 
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: none;
+}
 .btn-secondary {
   color: #fff;
   background-color: #5b78c7;
   border: none;
+  border-color: rgb(95, 85, 165);
+  box-shadow: none;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
   background-color: rgb(95, 85, 165);
+  border-color: rgb(95, 85, 165);
+  box-shadow: none;
 }
 .btn-secondary.focus, .btn-secondary:focus {
-  background-color: rgb(95, 85, 165)
+  background-color: rgb(95, 85, 165);
+  border-color: rgb(95, 85, 165);
+  box-shadow: none;
 }
 .btn-secondary:hover{
   background-color: rgb(95, 85, 165);
+  border-color: rgb(95, 85, 165);
+  box-shadow: none;
+}
+.btn-secondary:focus{
+  background-color: #5b78c7;
+  border-color:  #5b78c7;
+  box-shadow: none;
 }
 nav{
-  z-index: 1;
+  z-index: 1000;
   position: fixed;
   width: 100%;
   display: flex;
@@ -424,11 +449,11 @@ nav{
     padding-top: 240px;
   }
   /*about*/
-  .about{
+  .aboutMe{
     width: 90%;
     padding-top: 20%;
   }
-  .content-projects{
+  .projects{
     padding-top: 20%;
     width: 90%;
     display: inline-block;

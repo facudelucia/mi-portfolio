@@ -2,7 +2,6 @@ import React from 'react';
 import Home from "./components/Home"
 import AboutMe from "./components/AboutMe"
 import Contact from "./components/Contact"
-import IdiomaState from "./idioma/idiomaState"
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,9 +10,12 @@ import {
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Login from './components/Login';
+import Admin from './components/Admin';
+import AddProject from './components/AddProject';
+import FormEditProject from './components/FormEditProject';
 function App() {
   return (
-    <IdiomaState>
       <Router>
         <Switch>
             <Route exact path={"/"}>
@@ -36,9 +38,12 @@ function App() {
               <Projects />
               <Footer />
             </Route>
+            <Route exact path={"/login"} component={Login}/>
+            <Route exact path={"/admin"} component={Admin}/>
+            <Route exact path={"/addproject"} component={AddProject}/>
+            <Route exact path={"/editproject"} component={FormEditProject}/>
         </Switch>
       </Router>
-    </IdiomaState>
   );
 }
 

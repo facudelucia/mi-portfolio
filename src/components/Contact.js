@@ -1,11 +1,11 @@
-import React, { Fragment, useContext, useEffect, useState} from 'react';
-import idiomaContext from "../idioma/idiomaContext"
+import React, { Fragment, useEffect, useState} from 'react';
 import validator from "validator"
 import Swal from "sweetalert2"
 import {db} from "../firebase/firebaseConfig"
 import useSpinner from "../spinner/useSpinner"
+import { useStateValue } from '../StateProvider';
 const Contact = () => {
-    const { english } = useContext(idiomaContext)
+    const [{english}] = useStateValue()
     const [form, setForm] = useState({
         email:"",
         msg:""

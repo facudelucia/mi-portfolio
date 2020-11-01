@@ -1,9 +1,10 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import {NavLink} from "react-router-dom";
-import idiomaContext from "../idioma/idiomaContext"
+import { useStateValue } from '../StateProvider';
+
 
 const Navbar = () => {
-    const {english, changeIdiomaEspanol, changeIdiomaEnglish} = useContext(idiomaContext)
+    const [{english}, dispatch] = useStateValue()
     const handleBurger = () => {
         const burger = document.querySelector(".burger")
         const nav = document.querySelector(".nav-links");
@@ -19,10 +20,14 @@ const Navbar = () => {
         burger.classList.toggle("toggle")
     }
     const handleEspanol = () =>{
-        changeIdiomaEspanol()
+        dispatch({
+            type: "ESPANOL"
+        })
     }
     const handleEnglish = () =>{
-        changeIdiomaEnglish()
+        dispatch({
+            type:"ENGLISH"
+        })
     }
     return ( 
         <nav>
