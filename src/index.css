@@ -166,22 +166,16 @@ body{
 /*-----------projects styles------------*/
 .projects{
   padding-top: 10%;
+  padding-bottom: 3%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.projects__row{
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.projects__column{
-  float: left; 
-  width: 33%;
-  padding: 0 10px;
-  margin-bottom:30px;
-}
-.projects__card{
+.projectCard{
   background-color: white;
-  min-height: auto;
-  z-index:10;
+  margin-bottom: 12px;
 }
 .projects__card-header{
   text-align: center;
@@ -213,24 +207,24 @@ body{
   margin-top: 10px;
   display: block;
 }
-.projects__card:hover{
-    transform: scale(1.05);
-    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
-}
+
 .projects__description{
   color: gray;
 }
-@media screen and (max-width:1000px){
-  .projects__column{
-      width: 50%;
+@media screen and (min-width:576px){
+  .projectCard{
+    flex: 0 1 calc(90% - 1rem);
   }
 }
-@media screen and (max-width:620px){
-    .projects__column{
-        width:90%;
-        margin-left: 3%;
-        margin-right: auto;
-    }
+@media screen and (min-width:768px){
+  .projectCard{
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width:992px){
+  .projectCard{
+    flex: 0 1 calc(33% - 1rem);
+  }
 }
 /*-----------contact styles-----------*/
 
@@ -323,16 +317,17 @@ textarea.contact__input{
   position: relative;
   height: 5vh;
   background: white;
-  margin-top: -20px;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 #footer p{
   font-size: 16px;
-  line-height: 32px;
   letter-spacing: 1px;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 2px #ccc;
-  margin-bottom: 0px;
   text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*--------------navbar styles----------------*/
@@ -389,13 +384,15 @@ nav{
 }
 .nav-links li{
   margin-top: 15px;
+  display: block;
+  padding: 1rem;
 }
 .anchor{
   color: white;
   font-weight: bold;
   text-decoration: none;
-  letter-spacing: 4px;
-  font-size: 20px;
+  letter-spacing: 2px;
+  font-size: 16px;
 }
 .anchor::after{
   content: '';
@@ -439,6 +436,7 @@ nav{
   .nav-links{
     width: 60%;
   }
+
 }
 @media screen and (max-width:768px){
   body{

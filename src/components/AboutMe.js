@@ -19,20 +19,32 @@ const AboutMe = () => {
                             <span><strong>-</strong>
                                 Layout and responsive design with tools like HTML, CSS (media queries, flexbox, grid), SASS, Material UI and Bootstrap.</span>
                                 <span><strong>-</strong>Vanilla JS, ES6</span>
-                                <span><strong>-</strong>React (Hooks, Context API, React Redux, Styled Components)</span>
-                                <span><strong>-</strong>Angular (Angular maps, Angular material, Angularfire)</span>
-                                <span><strong>-</strong>Authentication and CRUD operations in firebase.</span>
-                                <span><strong>-</strong>Creation of APIs, authentications and CRUD operations with node, express and mongo.</span>
-                                <span><strong>-</strong>Git knowledge.</span>
+                                <span><strong>-</strong>React</span>
+                                <span><strong>-</strong>Angular</span>
+                                <span><strong>-</strong>Firebase</span>
+                                <span><strong>-</strong>Node</span>
+                                <span><strong>-</strong>Mongo</span>
+                                <span><strong>-</strong>Git</span>
+                                <br></br>
+                                <span>Work Experience:</span>
+                                <span><strong>-</strong>SouthernMinds</span>
+                                <span>Javascript Developer</span>
+                                <span>Dic 2020 - present</span>
                             </p>
                             : <p>Hola soy Facu, tengo 24 años, nací y vivo en la ciudad de Rosario, Argentina. Soy desarrollador web y tengo conocimientos en:
                             <span><strong>-</strong>Maquetado y diseño responsivo con herramientas como HTML, CSS (media queries, flexbox, grid), SASS, Material UI y Bootstrap.</span>
-                                <span><strong>-</strong>React (Hooks, Context API, React Redux, Styled Components)</span>
-                                <span><strong>-</strong>Angular (Angular maps, Angular material, Angularfire)</span>
+                                <span><strong>-</strong>React</span>
+                                <span><strong>-</strong>Angular</span>
                                 <span><strong>-</strong>Vainilla JS, ES6</span>
-                                <span><strong>-</strong>Autenticaciones y operaciones CRUD en firebase.</span>
-                                <span><strong>-</strong>Creacion de APIs, autenticaciones y operaciones CRUD con node, express y mongo.</span>
-                                <span><strong>-</strong>Manejo de Git.</span>
+                                <span><strong>-</strong>Firebase</span>
+                                <span><strong>-</strong>Node</span>
+                                <span><strong>-</strong>Mongo</span>
+                                <span><strong>-</strong>Git</span>
+                                <br></br>
+                                <span>Experiencia laboral:</span>
+                                <span><strong>-</strong>SouthernMinds</span>
+                                <span>Javascript Developer</span>
+                                <span>Dic 2020 - actualidad</span>
                             </p>}
                         <a href={"./assets/CV.pdf"} download>{english ? "Download CV" : "Descargar CV"} <i className="fas fa-file-download"></i></a>
                     </div>
