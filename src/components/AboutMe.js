@@ -28,8 +28,9 @@ const AboutMe = () => {
                                 <br></br>
                                 <span>Work Experience:</span>
                                 <span><strong>-</strong>SouthernMinds</span>
-                                <span>Javascript Developer</span>
-                                <span>Dic 2020 - present</span>
+                                <span>Frontend Developer</span>
+                                <span>HTML, CSS, Bootstrap, Jquery, Javascript</span>
+                                <span>Dec 2020 - Mar 2021</span>
                             </p>
                             : <p>Hola soy Facu, tengo 24 años, nací y vivo en la ciudad de Rosario, Argentina. Soy desarrollador web y tengo conocimientos en:
                             <span><strong>-</strong>Maquetado y diseño responsivo con herramientas como HTML, CSS (media queries, flexbox, grid), SASS, Material UI y Bootstrap.</span>
@@ -43,8 +44,9 @@ const AboutMe = () => {
                                 <br></br>
                                 <span>Experiencia laboral:</span>
                                 <span><strong>-</strong>SouthernMinds</span>
-                                <span>Javascript Developer</span>
-                                <span>Dic 2020 - actualidad</span>
+                                <span>Frontend Developer</span>
+                                <span>HTML, CSS, Bootstrap, Jquery, Javascript</span>
+                                <span>Dic 2020 - Mar 2021</span>
                             </p>}
                         <a href={"./assets/CV.pdf"} download>{english ? "Download CV" : "Descargar CV"} <i className="fas fa-file-download"></i></a>
                     </div>
