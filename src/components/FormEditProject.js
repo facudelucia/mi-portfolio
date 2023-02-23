@@ -48,7 +48,7 @@ function FormEditProject() {
     }
     const handleDelete = async (e) =>{
         e.preventDefault()
-        await axios.delete(`https://mi-portfolio-facu.herokuapp.com/${idLower}`,{
+        await axios.delete(`https://mi-portfolio-facu.herokuapp.com/projects/${idLower}`,{
             headers
           })
     }
